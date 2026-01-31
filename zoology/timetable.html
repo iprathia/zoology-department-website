@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>नोट्स</title>
+  <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .page-header {
+    background: url("https://source.unsplash.com/1600x500/?books,study") center/cover no-repeat;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .page-header::after {
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: rgba(0,0,0,0.4);
+  }
+
+  .page-header h1 {
+    position: relative;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .note-card {
+    transition: .3s;
+  }
+
+  .note-card:hover {
+    transform: translateY(-6px);
+  }
+</style>
+</head>
+<body>
+<nav class="navbar fixed-top">
+  <div class="container-fluid">
+    <button id="sidebarToggle">☰</button>
+    <a class="navbar-brand" href="#">Zoology Dept.</a>
+  </div>
+</nav>
+
+<div class="sidebar" id="sidebar">
+  <a href="index.html">🏠 होम</a>
+  <a href="about.html">ℹ️ परिचय</a>
+  <a href="faculty.html">👨‍🏫 शिक्षकगण</a>
+  <a href="notes.html" >📚 नोट्स</a>
+  <a href="timetable.html"class="active">🕒 समय सारणी</a>
+  <a href="gallery.html">📸 गैलरी</a>
+  <a href="contact.html">📞 संपर्क</a>
+</div>
+
+<main class="container py-5 mt-5">
+<!-- Header -->
+<section class="page-header">
+  <h1>📚 Zoology Time Table (प्राणीशास्त्र समय सारणी)</h1>
+</section>
+
+<div class="container py-5">
+
+  <!-- Search -->
+  <div class="mb-4">
+    <input type="text" id="searchNotes" class="form-control p-3" placeholder="🔍 विषय / नोट्स खोजें...">
+  </div>
+
+  <!-- Semester Section -->
+  <h2 class="mb-3">📘 सेमेस्टर समय सारणी</h2>
+
+  <div class="accordion mb-5" id="notesAccordion">
+
+    <!-- SEMESTER 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="sem1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          🟢 Semester 1 समय सारणी
+        </button>
+      </h2>
+
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#notesAccordion">
+        <div class="accordion-body">
+
+          <div class="row">
+
+            <!-- Subject 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>1. Animal Diversity / Animal Kingdom</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 10:00AM to 11:00AM</a>
+              </div>
+            </div>
+
+            <!-- Subject 2 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>2. Fundamentals of Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+
+             <!-- Subject 3 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>3.Practical – Zoology Lab</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 12:00PM to 01:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 4 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>4.Foundation/General Elective (e.g., English/Hindi/Computer Fundamentals)</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 02:00PM to 03:00PM</a>
+              </div>
+            </div>
+             <!-- Subject 5 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>5.Cell Biology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 03:00PM to 04:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 6 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 08:00AM to 09:00AM</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SEMESTER 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="sem2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          🔵 Semester 2 समय सारणी
+        </button>
+      </h2>
+
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+        <div class="accordion-body">
+
+          <div class="row">
+            <!-- Subject 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Chordate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 10:00AM to 11:00AM</a>
+              </div>
+            </div>
+
+            <!-- Subject 2 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Applied Zoology – I</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+
+             <!-- Subject 3 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Animal Physiology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 12:00PM to 01:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 4 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Practical – Zoology Lab (continued)</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 02:00PM to 03:00PM</a>
+              </div>
+            </div>
+             <!-- Subject 5 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Foundation/General Elective</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 03:00M to 04:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 6 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 08:00AM to 09:00PM</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+   <!-- SEMESTER 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="sem3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3">
+          🔵 Semester 3 समय सारणी
+        </button>
+      </h2>
+
+      <div id="collapseTwo3" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+        <div class="accordion-body">
+
+          <div class="row">
+           <!-- Subject 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Non-Chordates – II / Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 10:00AM to 11:00AM</a>
+              </div>
+            </div>
+
+            <!-- Subject 2 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Genetics</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00AM</a>
+              </div>
+            </div>
+
+             <!-- Subject 3 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Ecology & Environmental Biology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 12:00PM to 01:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 4 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Practical – Lab Work</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 02:00PM to 03:00PM</a>
+              </div>
+            </div>
+             <!-- Subject 5 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Skill/Generic Elective</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 03:00PM to 04:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 6 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 08:00AM to 09:00PM</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   <!-- SEMESTER 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="sem4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+          🔵 Semester 4 समय सारणी
+        </button>
+      </h2>
+
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+        <div class="accordion-body">
+
+          <div class="row">
+            <!-- Subject 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Chordates – II / Vertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 10:00AM to 11:00AM</a>
+              </div>
+            </div>
+
+            <!-- Subject 2 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Developmental Biology / Embryology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+
+             <!-- Subject 3 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Evolutionary Biology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 12:00PM to 01:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 4 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Practical – Lab Work</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 02:00AM to 03:00PM</a>
+              </div>
+            </div>
+             <!-- Subject 5 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Skill/Generic Elective</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 03:00AM to 04:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 6 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 08:00AM to 09:00PM</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!-- Other Notes  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="sem2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther">
+          🔵 Other समय सारणी
+        </button>
+      </h2>
+
+      <div id="collapseOther" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+        <div class="accordion-body">
+
+          <div class="row">
+            <!-- Subject 1 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Cell Biology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 10:00AM to 11:00AM</a>
+              </div>
+            </div>
+
+            <!-- Subject 2 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+
+             <!-- Subject 3 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Cell Biology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 12:00PM to 01:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 4 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+             <!-- Subject 5 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Cell Biology</h5>
+                <p><strong>Teacher:</strong> Dr. ABC</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+
+            <!-- Subject 6 -->
+            <div class="col-md-4 mb-3">
+              <div class="card note-card shadow-sm p-3">
+                <h5>Invertebrate Zoology</h5>
+                <p><strong>Teacher:</strong> Dr. XYZ</p>
+                <a href="#" class="btn btn-success w-100">📄 Every Day 11:00AM to 12:00PM</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</main>
+
+<footer>
+  <p>© 2026 Zoology Department</p>
+</footer>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // 🔍 Live Search Feature
+  document.getElementById("searchNotes").addEventListener("keyup", function() {
+    let input = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".note-card");
+
+    cards.forEach(card => {
+      let text = card.innerText.toLowerCase();
+      card.style.display = text.includes(input) ? "" : "none";
+    });
+  });
+</script>
+</body>
+</html>

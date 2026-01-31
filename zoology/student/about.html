@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoology Department | विभाग परिचय</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+<style>
+  .banner {
+    background: url('https://source.unsplash.com/1600x600/?zoology,animals') center/cover no-repeat;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .banner::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+
+  .banner h1 {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .highlight-card {
+    transition: .3s;
+  }
+
+  .highlight-card:hover {
+    transform: translateY(-8px);
+  }
+</style>
+
+</head>
+<body>
+<nav class="navbar fixed-top">
+  <div class="container-fluid">
+    <button id="sidebarToggle">☰</button>
+    <a class="navbar-brand ms-2" href="#">Zoology Dept.</a>
+  </div>
+</nav>
+<div class="sidebar" id="sidebar">
+  <a href="student_dashboard.php" class="active">🏠 होम</a>
+  <a href="about.html">ℹ️ परिचय</a>
+  <a href="faculty.html">👨‍🏫 शिक्षकगण</a>
+  <a href="notes.html">📚 नोट्स</a>
+  <a href="timetable.html">🕒 समय सारणी</a>
+  <a href="gallery.html">📸 गैलरी</a>
+  <a href="contact.html">📞 संपर्क</a>
+<a href="setting.php">👨‍🏫मेरा खाता</a>
+  <a href="#" class="logout">🚪 लॉगआउट</a>
+</div>
+<div class="container py-5 mt-5">
+
+  <!-- Introduction -->
+  <section>
+    <h2 class="mb-3">📘 विभाग का परिचय</h2>
+    <p class="lead">
+      प्राणीशास्त्र विभाग (Department of Zoology) प्राकृतिक जीवों के अध्ययन, अनुसंधान और संरक्षण पर केंद्रित है।
+      विभाग में आधुनिक प्रयोगशालाएँ, अनुभवी शिक्षक और उन्नत शिक्षण सुविधाएँ उपलब्ध हैं।  
+      हमारा उद्देश्य छात्रों को जीव-जंतुओं की संरचना, व्यवहार, विकास और पारिस्थितिकी के बारे में वैज्ञानिक समझ प्रदान करना है।
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Highlights -->
+  <section class="py-4">
+    <h2 class="mb-4">✨ विभाग की प्रमुख विशेषताएँ</h2>
+    <div class="row">
+      
+      <div class="col-md-4 mb-3">
+        <div class="card highlight-card shadow-sm p-3">
+          <h4>🧑‍🏫 अनुभवी शिक्षक</h4>
+          <p>Highly qualified और research-oriented faculty.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card highlight-card shadow-sm p-3">
+          <h4>🔬 आधुनिक प्रयोगशालाएँ</h4>
+          <p>Zoology Lab, Museum, field research tools.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card highlight-card shadow-sm p-3">
+          <h4>📚 रिसर्च और प्रोजेक्ट्स</h4>
+          <p>Wildlife study, biodiversity research.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Facilities -->
+  <section class="py-4">
+    <h2 class="mb-4">🏫 प्रयोगशाला एवं सुविधाएँ</h2>
+    <ul class="list-group">
+      <li class="list-group-item">➡ Zoology Laboratory</li>
+      <li class="list-group-item">➡ Specimen Museum</li>
+      <li class="list-group-item">➡ Slide preparation lab</li>
+      <li class="list-group-item">➡ Field visit tools</li>
+      <li class="list-group-item">➡ Smart teaching classrooms</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Courses -->
+  <section class="py-4">
+    <h2 class="mb-4">🎓 उपलब्ध पाठ्यक्रम</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <h4>M.sc Zoology</h4>
+          <p>2-year Postgraduate programme</p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Achievements -->
+  <section class="py-4">
+    <h2 class="mb-4">🏆 विभाग की उपलब्धियाँ</h2>
+    <ul class="list-group">
+      <li class="list-group-item">✔ Students selected in research institutes</li>
+      <li class="list-group-item">✔ Wildlife field survey projects</li>
+      <li class="list-group-item">✔ Publications in reputed journals</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Contact -->
+  <section>
+    <h2 class="mb-3">📞 संपर्क</h2>
+    <p><strong>HOD:</strong> Dr. XYZ</p>
+    <p><strong>Email:</strong> zoologydept@college.com</p>
+    <p><strong>Location:</strong> Kirodimal Govt. Arts & Science College, Raigarh, Chakradhar Nagar District- Raigarh, Chhattisgarh, 496001, Contact Info: Telephone 0776 2222966.</p>
+  </section>
+
+</div>
+<footer>
+  <p>© 2026 Zoology Department | Designed by M.Sc Student</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

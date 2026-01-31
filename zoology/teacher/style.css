@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f5fa;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004d40;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 600;
+}
+
+#sidebarToggle {
+  background-color: white;
+  border: none;
+  color: #004d40;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #00332c;
+  color: white;
+  padding-top: 60px;
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.sidebar.active { left: 0; }
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar a:hover, .sidebar a.active {
+  background-color: #00695c;
+}
+
+.logout {
+  background-color: #c62828;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+.hero {
+  margin-top: 56px; /* navbar space */
+}
+
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 20%;
+  text-shadow: 1px 1px 4px black;
+}
+
